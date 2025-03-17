@@ -65,9 +65,7 @@
 /* Estilos adicionales para el logo */
 .navbar .nav-logo a strong {
     color: #fff;
-    -webkit-background-clip: inherit;
     -webkit-text-fill-color: transparent;
-    -webkit-backdrop-filter: blur(55px); /* Efecto de desenfoque en el fondo */
     -webkit-text-stroke: 0.2px #eee; /* Contorno del texto */
 }
 
@@ -164,24 +162,9 @@
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
-    text-transform: capitalize;
     color: #fff;
     margin-bottom: 0.5rem;
 }
 
-/* Botón de contacto dentro del menú */
-.navbar .navigation .btn-contact {
-    margin-top: 1rem;
-    padding: 0.8rem 2.2rem;
-    background-color: transparent;
-    color: #fff;
-    border-radius: 1.8rem;
-    border: 2px solid #666;
-    cursor: pointer;
-}
 
-/* Efecto hover en el botón de contacto */
-.navbar .navigation .btn-contact:hover {
-    color: #000;
-    background-color: #fff;
-}
+
