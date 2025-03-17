@@ -4,42 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/styleIndex.css">
-    /* para los iconos, para no tener que descargarlos */
+    <link rel="stylesheet" href="/AhoraSi_Porfolio/css/styleIndex.css">
+    <link rel="stylesheet" href="/AhoraSi_Porfolio/automat/navbar.css">
+    <!-- para los iconos, para no tener que descargarlos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    
+   
 </head>
 
 
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <input type="checkbox" name="bars" id="bars" style="position: absolute;">
+    <!-- Esto no es Chato Olga, sino podria hacer esto: i c k k c k-->
+    <div id="navbar-container"></div>
+    <script>
+        fetch('/AhoraSi_Porfolio/automat/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data)
+            .catch(error => console.error('Error cargando la navbar:', error));
+    </script>
+
     
-            <div class="nav-contact">
-                
-                <span>Joan Griful Lara</span>
-                <a href="#">
-                    <span>Web Developer - Creative</span>
-                </a>
-            </div>
-            <div class="nav-logo">
-                <a href="" class="logo-link"><strong>J</strong>G</a>
-            </div>
-            <div class="nav-socials">
-                
-                <label for="bars" class="btn-bars"><i class="fa fa-bars"></i></label>
-            </div>
-            <div class="navigation">
-                <label for="bars" class="btn-close"><i class="fa fa-close"></i></label>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><button class="btn-contact">Contact Me</button></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     
+
+
+
 </body>

@@ -1,0 +1,187 @@
+/* Navbar */
+
+
+/* Barra de navegación principal */
+.navbar {
+    position: absolute; /* Se posiciona de forma absoluta respecto a su contenedor */
+    top: 0; /* Se coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+}
+
+/* Navbar cuando está activa (por ejemplo, al hacer scroll) */
+.navbar.active {
+    position: fixed; /* Se fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Fondo negro */
+    box-shadow: 1px 1px 4px #777; /* Sombra para resaltar */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Contenedor principal de la página */
+.container {
+    width: 100%;
+    max-width: 1350px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 1rem;
+}
+
+/* Contenedor dentro de la navbar */
+.navbar .container {
+    display: grid; /* Usa CSS Grid para distribuir los elementos */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Distribución flexible */
+    align-items: center; /* Alineación vertical */
+}
+
+/* Sección de contacto en la navbar */
+.navbar .nav-contact {
+    font-size: 18px;
+    font-weight: 400;
+    color: #eee; /* Color gris claro */
+}
+
+/* Estilos de los enlaces de contacto */
+.navbar .nav-contact a {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff; /* Color blanco */
+}
+
+/* Logotipo dentro de la navbar */
+.navbar .nav-logo a {
+    display: flex;
+    justify-content: center;
+    font-size: 44px; /* Tamaño grande para el logo */
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -8px; /* Reduce el espacio entre letras */
+}
+
+/* Estilos adicionales para el logo */
+.navbar .nav-logo a strong {
+    color: #fff;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-backdrop-filter: blur(55px); /* Efecto de desenfoque en el fondo */
+    -webkit-text-stroke: 0.2px #eee; /* Contorno del texto */
+}
+
+/* Redes sociales dentro de la navbar */
+.navbar .nav-socials {
+    display: flex;
+    justify-content: flex-end; /* Alinea los iconos de redes a la derecha */
+    gap: 1rem; /* Espacio entre iconos */
+}
+
+/* Estilos de los iconos de redes sociales */
+.navbar .nav-socials .s-link {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444; /* Borde gris */
+    font: 16px;
+    color: #eee;
+    cursor: pointer;
+}
+
+/* Efecto hover en los iconos de redes sociales */
+.navbar .nav-socials a:hover {
+    background-color: #fff;
+    color: #444;
+}
+
+/* Oculta el checkbox del menú hamburguesa */
+#bars {
+    display: none;
+}
+
+/* Botón de abrir y cerrar el menú */
+.btn-bars, .btn-close {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444;
+    font: 16px;
+    color: #eee;
+    cursor: pointer;
+}
+
+/* Posiciona el botón de cierre dentro del menú */
+.btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Menú lateral de navegación */
+.navbar .navigation {
+    position: fixed;
+    top: 0;
+    right: -450px; /* Se oculta fuera de la pantalla */
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    min-height: 500px;
+    background-color: #000;
+    z-index: 1000;
+    transition: all 2s; /* Animación de deslizamiento */
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#bars:checked ~ .navigation {
+    right: 0;
+}
+
+/* Lista de navegación dentro del menú */
+.navbar .navigation ul {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6rem; /* Espaciado entre elementos */
+}
+
+/* Estilos de los elementos de la lista de navegación */
+.navbar .navigation li {
+    height: fit-content;
+}
+
+/* Enlaces dentro del menú de navegación */
+.navbar .navigation a {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Botón de contacto dentro del menú */
+.navbar .navigation .btn-contact {
+    margin-top: 1rem;
+    padding: 0.8rem 2.2rem;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 1.8rem;
+    border: 2px solid #666;
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón de contacto */
+.navbar .navigation .btn-contact:hover {
+    color: #000;
+    background-color: #fff;
+}
