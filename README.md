@@ -18,9 +18,12 @@ Para la tipografía, he utilizado:
 
 ### Paleta de colores
 Los colores elegidos para el diseño son:
-- **Color principal:** `#31383B` (Gris oscuro para texto y detalles).
-- **Color secundario:** `#BCD4E0` (Azul claro para fondo y realces).
-- **Color de fondo:** `#FFFFFF` (Blanco en secciones específicas).
+<div style="display: flex; justify-content: space-around;">
+  <div style="background-color: #BCD4E0; width: 50px; height: 50px;"></div>
+  <div style="background-color: #31383B; width: 50px; height: 50px;"></div>
+  <div style="background-color: #fff; width: 50px; height: 50px;"></div>
+  <div style="background-color: #000; width: 50px; height: 50px;"></div>
+</div>
 
 ## Estructura de la Página
 La página cuenta con las siguientes secciones:
