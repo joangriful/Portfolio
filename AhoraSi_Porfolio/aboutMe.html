@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - about Me</title>
+    <link rel="stylesheet" href="/css/styleAboutMe.css">
+    <link rel="stylesheet" href="/automat/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Esto no es Chato Olga, sino podria hacer esto: i c k k c k-->
+    <div id="navbar-container"></div>
+    <script>
+        fetch('/automat/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data)
+            .catch(error => console.error('Error cargando la navbar:', error));
+    </script>
+
+
+<div class="container">
+    <div class="text">
+        <h1>Quien esta detras de la pantalla -</h1>
+        <p>Esta es un pequeño espacio para conocer a la persona y no al programador -</p>
+    </div>
+    <div class="image">
+        <img src="/img/Me2.jpg" alt="Imagen Mia">
+    </div>
+    
+</div>
+
+<div class="container">
+    <div class="text">
+        <h1>Mi parte Programadora:</h1>
+        <h2>Estudios: </h2> 
+        <p>· Bachillerato Profesional en técnico en soporte de desarrollo de programación - BPTSDP </p>
+        <p>· Grado Superior en Desarrollo de Aplicaciones Web - DAW</p>
+        
+        <a href="/projects.html" target="_blank">
+            <button class="buton">Quieres ver alguno de mis proyectos?</button>
+        </a>
+        
+    </div>
+    
+    <div class="text"> 
+        <h1>Mi parte Fotógrafo:</h1>
+        <h2>Proyectos : </h2> 
+        <p>· hablar formacion </p>
+        <p>· hablar de proyectos de fotografia</p>
+
+        <a href="https://glstudio.pic-time.com/-porfolio/gallery?inviteptoken2=AAAAAFUAAABksjt9sCKJ5SVyETIS4WSSfjes" target="_blank">
+            <button class="buton">Mi Portfolio de fotografia</button>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+</body>

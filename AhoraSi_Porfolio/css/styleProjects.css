@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #31383B;
+    background-color: #BCD4E0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.projects {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 10px;
+}
+
+.item {
+    background-color: #BCD4E0;
+    color: #31383B;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card {
+    margin-right: 40px;
+}
+
+/* Footer fijo abajo */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}

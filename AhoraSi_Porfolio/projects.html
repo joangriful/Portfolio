@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="/css/styleProjects.css">
+    <link rel="stylesheet" href="/automat/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Esto no es Chato Olga, sino podria hacer esto: i c k k c k-->
+    <div id="navbar-container"></div>
+    <script>
+        fetch('/automat/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data)
+            .catch(error => console.error('Error cargando la navbar:', error));
+    </script>
+
+    <div class="contenedor">
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="proyectos">
+                    <div class="card">
+                        <h1>Proyectos -</h1>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <button class="item">
+                        <div class="image">
+                            <img src="/img/game.png" alt="">
+                        </div>
+                        <div class="card">
+                            <h1>Game Shit Daw</h1>
+                            <p>Videojuego de java...</p>
+                        </div>
+                    </button>
+                    <button class="item">
+                        <div class="image">
+                            <img src="/img/game.jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <h1>Bootrack</h1>
+                            <p>--- GitHub Project ---</p>
+                        </div>
+                    </button>
+                    <button class="item">
+                        <div class="image">
+                            <img src="/img/game.jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <h1>Bauhouse</h1>
+                            <p>HTML, CSS, GRID</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Todos los derechos reservados</p>
+                <div class="footer-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

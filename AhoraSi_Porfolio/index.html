@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/styleIndex.css">
+    <link rel="stylesheet" href="/automat/navbar.css">
+    <!-- para los iconos, para no tener que descargarlos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+
+
+<body>
+    <!-- Esto no es Chato Olga, sino podria hacer esto: i c k k c k-->
+    <div id="navbar-container"></div>
+    <script>
+        fetch('/automat/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data)
+            .catch(error => console.error('Error cargando la navbar:', error));
+    </script>
+
+<div class="container">
+    <div class="text">
+        <h1>Joan Griful Lara</h1>
+        <p>This is my art</p>
+        <p>This is my working</p>
+        <p>This is my pasion</p>
+        <p>This is my </p>
+    </div>
+    <div class="image">
+        <img src="/img/Me.jpg" alt="Imagen Mia">
+    </div>
+    
+</div>
+
+<section class="secciones" id="secciones">
+    <div class="container">
+        <div class="items">
+            
+            <button class="item" onclick="location.href='/aboutMe.html'">
+                <div class="image">
+                    <img src="/img/game.png" alt="">
+                </div>
+                <div class="card">
+                    <h1>Projects</h1>
+                    <p>Aqui encontraras proyectos desarrollados en el ultimo año</p>
+                </div>
+            </button>
+
+            <button class="item" onclick="location.href='/contact.html'">
+                <div class="image">
+                    <img src="/img/MeMusic.jpg" alt="">
+                </div>
+                <div class="card">
+                    <h1>AboutMe</h1>
+                    <p>Si quieres conocerme un poco mas pincha aqui</p>
+                </div>
+            </button>
+            <button class="item" onclick="location.href='/contact.html'">
+                <div class="image">
+                    <img src="/img/Me2.jpg" alt="">
+                </div>
+                <div class="card">
+                    <h1>Contact</h1>
+                    <p>Si necesitas saber mas informacion aqui en encontraras lo que buscas</p>
+                </div>
+            </button>
+            
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+</body>
